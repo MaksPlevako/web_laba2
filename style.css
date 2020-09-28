@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif; // что делает font-family?
+    font-size: 14px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color:#000;
+}
+
+
+/* Container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+===================*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute; // что будет, если поменять значение на fixed?
+    top: 0;
+    left: 0;
+    z-index: 1000; // какие функции выполняет?
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369; // за что отвечает данная строка?
+}
+
+
+/* Nav
+===================*/
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;  // что делаает данный параметр?
+    transition: opacity .1s linear; // что будет, если заменить значение на .10s?
+}
+
+
+
+/* Intro
+===================*/
+.intro {
+    text-align: center;
+    height: 750px;
+    padding-top: 20%;
+    background: #31344e url("img/_intro-bg.jpg") center no-repeat;
+    background-size: cover; // что означает параметр cover?
+
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro__title {
+    margin: 10px 35px 25px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    line-height: 1.1;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+/* Button
+===================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; // какие функции выполняет  text-decoration?
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover { // зачем используется :hover
+    background-color: #fff;
+}
+
+/*Container 2*/
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.column-1{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    padding: ;
+}
+
+.column-2{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+.column-3{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    margin-left: 10px
+}
+
+.text_column{
+    margin-bottom: 50px;
+}
+
+#radioButton1{
+    margin-bottom: 300px;
+}
+
+.button_2{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: #000;
+    padding: 7px 30px;
+    text-transform: uppercase;
+}
+
+textarea{
+    overflow-y: scroll;
+    width: 300px;
+    height: 320px;
+    resize: vertical;
+    max-height: 500px;
+}
+
+.checkbox{
+    text-align: left;
+}
+
+.btndd{
+    margin-bottom: 270px;
+}
+
+.button_3{
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: #000;
+    background-color: silver;
+    padding: 1px 50px;
+}
+
